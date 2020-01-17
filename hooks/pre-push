@@ -44,7 +44,7 @@ do
 		# 判断当前分支是否包含它
 		if [ -z $(git log $local_ref | grep $lastCommit) ]
 		then
-			echo "你把master合并进来啊！！！"
+			echo "！！！！！！！！！！！！！！！！！\n！！！请合并master至当前分支！！！\n！！！！！！！！！！！！！！！！！"
 			exit 1
 		fi
 	fi
