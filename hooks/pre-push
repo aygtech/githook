@@ -40,9 +40,9 @@ do
 			range="$remote_sha..$local_sha"
 		fi
 		# 获取master最新commit
-		lastCommit=$(git rev-parse master)
+		masterLastCommit=$(git rev-parse master)
 		# 判断当前分支是否包含它
-		if [ -z $(git log $local_ref | grep $lastCommit) ]
+		if [ -z $(git log $local_ref | grep $masterLastCommit) ]
 		then
 			echo "！！！！！！！！！！！！！！！！！\n！！！请合并master至当前分支！！！\n！！！！！！！！！！！！！！！！！"
 			exit 1
