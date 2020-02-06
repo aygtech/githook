@@ -46,6 +46,8 @@ do
 		then
 			echo "！！！请合并master至当前分支！！！"
 			exit 1
+		else
+			echo "！！！已合并master至当前分支，可以继续！！！"
 		fi
 	fi
 done
